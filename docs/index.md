@@ -5,7 +5,7 @@ statistics: True
 <h1 align="center">XDocs</h1>
 
 <p align="center">
-<img src="../material/overrides/assets/nightLights.jpg" alt="logo" />
+<img src="/material/overrides/assets/nightLights.jpg" alt="logo" />
 
 <br/>
 Evariste-xu 的电子书库
