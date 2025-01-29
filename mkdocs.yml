@@ -1,12 +1,12 @@
 site_name: XDocs # 站点名称
-# site_url: https://Xiaokang2022.github.io/Fucking-Code/ # 站点链接
-# repo_url: https://github.com/Xiaokang2022/Fucking-Code/ # 仓库地址
-# repo_name: Xiaokang2022/Fucking-Code # 仓库名称
-edit_uri: edit/main/docs # 编辑地址
-edit_uri_template: null # 编辑地址模板（默认值）
-site_description: Everything about the Fucking Code. # 站点描述
-site_author: Xiaokang2022 # 站点作者
-copyright: Copyright &copy; 2024 Xiaokang2022 # 版权信息
+site_url: https://unravel-xu.github.io/XDocs # 站点链接
+repo_url: https://github.com/unravel-xu/XDocs # 仓库地址
+repo_name: unravel-xu/XDocs # 仓库名称
+# edit_uri: edit/main/docs # 编辑地址
+# edit_uri_template: null # 编辑地址模板（默认值）
+site_description: Evariste-xu的电子书库 # 站点描述
+site_author: Evariste-xu # 站点作者
+copyright: Copyright &copy; 2024 Evariste-xu # 版权信息
 remote_branch: gh-pages # GitHub Pages 远程分支名称（默认值）
 remote_name: origin # 远程名称（默认值）
 docs_dir: docs # 文档目录（默认值）
@@ -201,10 +201,10 @@ extra: # 额外设定
     json: [.s2]
   social: # 社交联系方式（页面右下角内容）
     - icon: fontawesome/brands/github
-      link: https://github.com/Xiaokang2022/Fucking-Code/
+      link: https://github.com/unravel-xu/XDocs
       name: GitHub Repository
     - icon: fontawesome/solid/paper-plane
-      link: mailto:2951256653@qq.com
+      link: mailto:3355340673@qq.com
       name: Contact the author
   consent:
     actions:
@@ -257,7 +257,7 @@ plugins:
       timezone: Asia/Shanghai
   # - git-authors: # 当配置不好下方的 git-committers 时可采用这个
   - git-committers:
-      repository: Xiaokang2022/Fucking-Code
+      repository: unravel-xu/XDocs
       branch: main
       token: !ENV ["GH_TOKEN"] # 需要自行在终端中设置临时环境变量，强烈不建议显式地在此处设置 token
   - glightbox:
