@@ -1,6 +1,6 @@
 const txt = [
-  "欢迎来到 Fucking Code 的官方网站，希望本网站能对您有一定的帮助！",
-  "Welcome to the official website of Fucking Code, I hope this website can be of some help to you!",
+  "欢迎来到 Evariste-xu 的电子书库，这里记录了一些学习笔记！",
+  "Welcome to Evariste-xu's eBook library, where some of his study notes are recorded!",
 ];
 
 var index = 0;
