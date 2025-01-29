@@ -1,7 +1,7 @@
-site_name: Fucking Code # 站点名称
-site_url: https://Xiaokang2022.github.io/Fucking-Code/ # 站点链接
-repo_url: https://github.com/Xiaokang2022/Fucking-Code/ # 仓库地址
-repo_name: Xiaokang2022/Fucking-Code # 仓库名称
+site_name: XDocs # 站点名称
+# site_url: https://Xiaokang2022.github.io/Fucking-Code/ # 站点链接
+# repo_url: https://github.com/Xiaokang2022/Fucking-Code/ # 仓库地址
+# repo_name: Xiaokang2022/Fucking-Code # 仓库名称
 edit_uri: edit/main/docs # 编辑地址
 edit_uri_template: null # 编辑地址模板（默认值）
 site_description: Everything about the Fucking Code. # 站点描述
@@ -10,7 +10,7 @@ copyright: Copyright &copy; 2024 Xiaokang2022 # 版权信息
 remote_branch: gh-pages # GitHub Pages 远程分支名称（默认值）
 remote_name: origin # 远程名称（默认值）
 docs_dir: docs # 文档目录（默认值）
-site_dir: site # 网站目录（默认值）
+site_dir:  # 网站目录（默认值）
 dev_addr: 127.0.0.1:8000 # 预览模式地址（默认值）
 use_directory_urls: true # URL 使用目录名还是文件名（默认值）
 strict: false # 警告级别（默认值），出现警告就终止程序
@@ -132,7 +132,7 @@ markdown_extensions:
 
 theme: # 此项各个设定因主题而异
   name: material # 主题名称
-  custom_dir: docs/overrides # 覆盖目录
+  custom_dir: material/overrides # 覆盖目录
   language: zh # 主题语言
   features:
     # - header.autohide # 顶栏自动隐藏
@@ -179,8 +179,8 @@ theme: # 此项各个设定因主题而异
         icon: material/weather-night
         name: 切换至系统主题
   font: false # 避免从谷歌加载字体导致网页加载变慢（具体参数可以在自定义 CSS 中指定）
-  logo: logo.png # 页面左上角徽标
-  favicon: logo.png # 网页的图标
+  logo: assets/logo.gif # 页面左上角徽标
+  favicon: assets/logo.gif # 网页的图标
   icon: # 图标重载，替换掉默认的图标
     previous: fontawesome/solid/angle-left # 左下角向前翻页的图标
     next: fontawesome/solid/angle-right # 右下角向后翻页的图标
@@ -221,13 +221,14 @@ extra: # 额外设定
       我们使用 cookie 来识别您的重复访问和偏好，以及衡量我们文档的有效性和用户是否找到他们正在搜索的内容。在您的同意下，您将帮助我们改进我们的文档。
 
 extra_javascript:
-  - extra/javascript/shortcuts.js # 绑定左右键换页的键盘快捷键
-  - extra/javascript/mouse.js # 鼠标点击烟花效果
-  - extra/javascript/typing.js # 打字机效果
-  # - extra/javascript/canvas-nest.js # 背景效果
-  - extra/javascript/tongji.baidu.js # 百度统计脚本
-  - extra/javascript/mathjax.js # 数学表达式
-  - extra/javascript/tablesort.js # 表格排序功能
+  - assets/javascript/shortcuts.js # 绑定左右键换页的键盘快捷键
+  # - assets/javascript/mouse.js # 鼠标点击烟花效果
+  - assets/javascript/typing.js # 打字机效果
+  # - assets/javascript/canvas-nest.js # 背景效果
+  # - assets/javascript/snow.js # 背景效果
+  - assets/javascript/tongji.baidu.js # 百度统计脚本
+  - assets/javascript/mathjax.js # 数学表达式
+  - assets/javascript/tablesort.js # 表格排序功能
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js # 数学表达式运行环境
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js # 表格排序功能运行环境（默认文本类型）
   - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.date.min.js # 表格排序功能（日期类型）
@@ -237,7 +238,7 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js # 表格排序功能（数字类型）
 
 extra_css:
-  - extra/css/extra.css # 加载自定义的样式
+  - assets/css/extra.css # 加载自定义的样式
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css # 设置字体（霞鹜文楷）
 
 plugins:
@@ -246,6 +247,9 @@ plugins:
       lang:
         - zh
         - en
+  - awesome-pages:
+  # - obsidian-bridge:
+  - obsidian-support:
   - git-revision-date-localized:
       enable_creation_date: true
       type: iso_datetime
@@ -268,78 +272,58 @@ plugins:
 
 watch: # serve 实时预览模式下检测更改的目录或文件
   - docs/
+  - material/
   - sources/
   - pythontutor/
   - mkdocs.yml
 
-nav:
-  - 主页:
-      - 开始: index.md
-      - 使用指南: Guide.md
-      - 关于本站: About.md
-      - 贡献指南: Contributing.md
-      - 项目许可: LICENSE.md
-      - 建议区: Suggest.md
+# nav:
+#   - 主页:
+#       - 开始: index.md
+#       - 使用指南: Guide.md
+#       - 关于本站: About.md
+#       - 贡献指南: Contributing.md
+#       - 项目许可: LICENSE.md
+#       - 建议区: Suggest.md
 
-  - 数据结构:
-      - 数据结构简介: Data Structure/index.md
+#   - 数据结构:
+#       - 数据结构简介: Data Structure/index.md
 
-  - 算法:
-      - 算法简介: Algorithm/index.md
-      - 排序:
-          - 排序简介: Algorithm/sort/index.md
-          - 直接插入排序: Algorithm/sort/straight_insertion_sort.md
-          - 二分插入排序: Algorithm/sort/binary_insertion_sort.md
-          - 分组插入排序（希尔排序）: Algorithm/sort/shell_sort.md
-          - 直接选择排序: Algorithm/sort/straight_selection_sort.md
-          - 树形选择排序（锦标赛排序）: Algorithm/sort/tournament_sort.md
-          - 简单交换排序（冒泡排序）: Algorithm/sort/bubble_sort.md
-          - 标记交换排序（改进的冒泡排序）: Algorithm/sort/improved_bubble_sort.md
-          - 分区交换排序（快速排序）: Algorithm/sort/quick_sort.md
-          - 随机基准分区交换排序（改进的快速排序）: Algorithm/sort/random_quick_sort.md
-          - 三数取中分区交换排序（改进的快速排序）: Algorithm/sort/improved_quick_sort.md
-          - 归并排序: Algorithm/sort/merge_sort.md
-          - 计数排序: Algorithm/sort/counting_sort.md
-          - 基数排序: Algorithm/sort/radix_sort.md
-          - 堆排序: Algorithm/sort/heap_sort.md
-          - 桶排序: Algorithm/sort/bucket_sort.md
-          - tim_sort: Algorithm/sort/tim_sort.md
-          - pdq_sort: Algorithm/sort/pdq_sort.md
-      - 查找:
-          - 查找简介: Algorithm/search/index.md
-          - 顺序查找: Algorithm/search/seq_search.md
-          - 分块查找（改进的顺序查找）: Algorithm/search/block_search.md
-          - 二分查找: Algorithm/search/binary_search.md
-          - 散列查找: Algorithm/search/hash_search.md
-      # - 预处理:
-      #     - 前缀和:
-      #     - 差分:
-      # - 快速 IO:
-      #     - 输入:
-      #     - 输出:
+#   - 算法:
+#       - 算法简介: Algorithm/index.md
+#       - 排序:
+#           - 排序简介: Algorithm/sort/index.md
+#           - 直接插入排序: Algorithm/sort/straight_insertion_sort.md
+#           - 二分插入排序: Algorithm/sort/binary_insertion_sort.md
+#           - 分组插入排序（希尔排序）: Algorithm/sort/shell_sort.md
+#           - 直接选择排序: Algorithm/sort/straight_selection_sort.md
+#           - 树形选择排序（锦标赛排序）: Algorithm/sort/tournament_sort.md
+#           - 简单交换排序（冒泡排序）: Algorithm/sort/bubble_sort.md
+#           - 标记交换排序（改进的冒泡排序）: Algorithm/sort/improved_bubble_sort.md
+#           - 分区交换排序（快速排序）: Algorithm/sort/quick_sort.md
+#           - 随机基准分区交换排序（改进的快速排序）: Algorithm/sort/random_quick_sort.md
+#           - 三数取中分区交换排序（改进的快速排序）: Algorithm/sort/improved_quick_sort.md
+#           - 归并排序: Algorithm/sort/merge_sort.md
+#           - 计数排序: Algorithm/sort/counting_sort.md
+#           - 基数排序: Algorithm/sort/radix_sort.md
+#           - 堆排序: Algorithm/sort/heap_sort.md
+#           - 桶排序: Algorithm/sort/bucket_sort.md
+#           - tim_sort: Algorithm/sort/tim_sort.md
+#           - pdq_sort: Algorithm/sort/pdq_sort.md
+#       - 查找:
+#           - 查找简介: Algorithm/search/index.md
+#           - 顺序查找: Algorithm/search/seq_search.md
+#           - 分块查找（改进的顺序查找）: Algorithm/search/block_search.md
+#           - 二分查找: Algorithm/search/binary_search.md
+#           - 散列查找: Algorithm/search/hash_search.md
+#       # - 预处理:
+#       #     - 前缀和:
+#       #     - 差分:
+#       # - 快速 IO:
+#       #     - 输入:
+#       #     - 输出:
 
-  - 数值计算:
-      - 数值计算简介: Numerical Calculation/index.md
-  - 设计模式:
-      - 设计模式简介: Design Pattern/index.md
-  - 数据库:
-      - 数据库简介: Database/index.md
-  - C:
-      - C 简介: C/index.md
-  - C++:
-      - C++ 简介: C++/index.md
-  - Python:
-      - Python 简介: Python/index.md
-      - 搭建开发环境: Python/01.md
-  - Java:
-      - Java 简介: Java/index.md
-  - C#:
-      - C# 简介: C#/index.md
-  - TypeScript:
-      - TypeScript 简介: TypeScript_/index.md
-  - HTML:
-      - HTML 简介: HTML_/index.md
-  - CSS:
-      - CSS 简介: CSS_/index.md
-  - Markdown:
-      - Markdown 简介: Markdown/index.md
+#   - 建站相关:
+#       - 建站简介: Website/index.md
+#       - Mkdocs:
+#           - 一些参考: Website/mkdocs/一些用mkdocs搭建的网站汇总.md

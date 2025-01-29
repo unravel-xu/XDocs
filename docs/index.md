@@ -5,7 +5,7 @@ statistics: True
 <h1 align="center">Fucking Code</h1>
 
 <p align="center">
-<img src="logo.png" alt="logo" />
+<img src="assets/sea.jpg" alt="logo" />
 <br/>
 关于可恶代码的一切！
 <br/>

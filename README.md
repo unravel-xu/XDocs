@@ -1,6 +1,6 @@
 <h1 align="center">Fucking Code</h1>
 
-<p align="center"><img src="./docs/logo.png" width=128px /></p>
+<p align="center"><img src="./material/overrides/assets/logo.gif" width=128px /></p>
 
 <p align="center">
 Everything about the fucking code!
