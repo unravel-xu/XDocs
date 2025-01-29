@@ -175,8 +175,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "83dd715f55a9b775",
+  "active": "fd4bcebd4a84e2f8",
   "lastOpenFiles": [
+    "requirements.txt",
     "img/docs/Website/mkdocs/file-20250129180913993.png",
     "img/docs/Website/mkdocs/obsidian和mkdocs联动.md/file-20250129180827218.png",
     "img/docs/Website/mkdocs/obsidian和mkdocs联动.md",
@@ -203,7 +204,6 @@
     "docs/Guide.md",
     "material/overrides/assets/logo.gif",
     "material/overrides/assets/science-fiction.gif",
-    "material/overrides/assets/sea.jpg",
     "docs/未命名.md",
     "docs/Suggest.md",
     "docs/Algorithm/sort/binary_insertion_sort.md",
