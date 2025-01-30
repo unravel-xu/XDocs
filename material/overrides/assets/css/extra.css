@@ -132,3 +132,19 @@ audio::-webkit-media-controls-enclosure {
 .heart {
     animation: heart 1000ms infinite;
 }
+
+/* 控制标题动态变色 */
+.gradient-text {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #c7d2fe, #8678f9);
+    background-size: 200% auto;
+    animation: textGradient 5s linear infinite;
+}
+
+@keyframes textGradient {
+to {
+    background-position: -200%;
+}
+}

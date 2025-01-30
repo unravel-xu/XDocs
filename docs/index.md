@@ -6,12 +6,9 @@ statistics: True
 <p align="center">
     <img src="./open-source.png" width=25%, height=auto alt="logo" />
     <br/>
+        <center><font size=6 class="gradient-text">Evariste-xu 的电子书库</font></center>
     <br/>
 </p>
-
-<center><font  color= #757575 size=6 class="ml3">Evariste-xu 的电子书库</font></center>
-<script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
-
 <p align="center">
 <a href="https://github.com/unravel-xu/XDocs/watchers"><img alt="Watchers" src="https://img.shields.io/github/watchers/unravel-xu/XDocs?label=Watchers&logo=github&style=flat" title="Watchers" /></a>
 <a href="https://github.com/unravel-xu/XDocs/forks"><img alt="Forks" src="https://img.shields.io/github/forks/unravel-xu/XDocs?label=Forks&logo=github&style=flat" title="Forks" /></a>
@@ -60,6 +57,8 @@ statistics: True
     要提建议就来这里吧！
 
 </div>
+
+
 
 !!! info "本站统计"
 
