@@ -3,13 +3,13 @@ statistics: True
 ---
 
 <h1 align="center">XDocs</h1>
-
 <p align="center">
-<img src="./nightLights.jpg" alt="logo" />
-
-<br/>
-Evariste-xu 的电子书库
-<br/>
+    <img src="./open-source.png" width=25%, height=auto alt="logo" />
+    <br/>
+        <b>
+            Evariste-xu 的电子书库
+        </b>
+    <br/>
 </p>
 
 <p align="center">
