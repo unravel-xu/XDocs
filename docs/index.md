@@ -6,11 +6,11 @@ statistics: True
 <p align="center">
     <img src="./open-source.png" width=25%, height=auto alt="logo" />
     <br/>
-        <b>
-            Evariste-xu 的电子书库
-        </b>
     <br/>
 </p>
+
+<center><font  color= #757575 size=6 class="ml3">Evariste-xu 的电子书库</font></center>
+<script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 
 <p align="center">
 <a href="https://github.com/unravel-xu/XDocs/watchers"><img alt="Watchers" src="https://img.shields.io/github/watchers/unravel-xu/XDocs?label=Watchers&logo=github&style=flat" title="Watchers" /></a>
