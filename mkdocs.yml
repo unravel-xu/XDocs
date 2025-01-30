@@ -250,9 +250,6 @@ plugins:
   - awesome-pages:
   # - obsidian-bridge:
   - obsidian-support:
-  - social:
-      cards_layout_options:
-        background_color: "#ff1493"
   - git-revision-date-localized:
       enable_creation_date: true
       type: iso_datetime
