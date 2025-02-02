@@ -1,14 +1,5 @@
 <h1 align="center">XDocs</h1>
 <p align="center">
-    <img src="./docs/open-source.png" width=25%, height=auto alt="logo" />
-    <br/>
-        <b>
-            Evariste-xu 的电子书库
-        </b>
-    <br/>
-</p>
-
-<p align="center">
 <a href="https://github.com/unravel-xu/XDocs/watchers"><img alt="Watchers" src="https://img.shields.io/github/watchers/unravel-xu/XDocs?label=Watchers&logo=github&style=flat" title="Watchers" /></a>
 <a href="https://github.com/unravel-xu/XDocs/forks"><img alt="Forks" src="https://img.shields.io/github/forks/unravel-xu/XDocs?label=Forks&logo=github&style=flat" title="Forks" /></a>
 <a href="https://github.com/unravel-xu/XDocs/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/unravel-xu/XDocs?label=Stars&color=gold&logo=github&style=flat" title="Stars" /></a>
