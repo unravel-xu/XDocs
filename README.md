@@ -1,6 +1,6 @@
 <h1 align="center">XDocs</h1>
 <p align="center">
-    <img src="../XDocs/docs/open-source.png" width=25%, height=auto alt="logo" />
+    <img src="./docs/open-source.png" width=25%, height=auto alt="logo" />
     <br/>
         <b>
             Evariste-xu 的电子书库
@@ -31,25 +31,25 @@
 
 <div class="grid cards" markdown>
 
--   [ℹ️ **关于本站**](./About.md)
+-   [ℹ️ **关于本站**](https://unravel-xu.github.io/XDocs/About/)
 
     ***
 
     想知道更多关于本站的秘密吗？
 
--   [📕 **贡献指南**](./Contributing.md)
+-   [📕 **贡献指南**](https://unravel-xu.github.io/XDocs/Contributing/)
 
     ***
 
     我知道你想为这个网站做出贡献！
 
--   [📘 **项目许可证**](./LICENSE.md)
+-   [📘 **项目许可证**](https://unravel-xu.github.io/XDocs/LICENSE/)
 
     ***
 
     是几乎没有限制的 MIT License
 
--   [💡 **建议区**](./Suggest.md)
+-   [💡 **建议区**](https://unravel-xu.github.io/XDocs/Suggest/)
 
     ***
 
