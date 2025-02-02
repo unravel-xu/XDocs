@@ -10,7 +10,7 @@ copyright: <a href="#__consent">修改 Cookie 设置</a><br/>Copyright &copy; 20
 remote_branch: gh-pages # GitHub Pages 远程分支名称（默认值）
 remote_name: origin # 远程名称（默认值）
 docs_dir: docs # 文档目录（默认值）
-site_dir:  # 网站目录（默认值）
+site_dir: site # 网站目录（默认值）
 dev_addr: 127.0.0.1:8000 # 预览模式地址（默认值）
 use_directory_urls: true # URL 使用目录名还是文件名（默认值）
 strict: false # 警告级别（默认值），出现警告就终止程序
@@ -38,9 +38,10 @@ markdown_extensions:
   - wikilinks # 快捷链接
 
   - toc: # 目录
-      marker: "" # 目录替换文本，空字符串则不替换，缺省为 [TOC]
+      # marker: "" # 目录替换文本，空字符串则不替换，缺省为 [TOC]
+      title: On this Page
       anchorlink: false # 锚点链接（默认值），给标题自身锚定链接
-      permalink: "&para;" # 锚点符号
+      permalink: true # 锚点符号
       permalink_title: ⚓ # 锚点链接提示词
       permalink_leading: false # 前置锚点链接（默认值），将锚点放到标题前面
       baselevel: 1 # 最高级别（默认值），往下顺延
@@ -135,7 +136,7 @@ theme: # 此项各个设定因主题而异
   custom_dir: material/overrides # 覆盖目录
   language: zh # 主题语言
   features:
-    # - header.autohide # 顶栏自动隐藏
+    - header.autohide # 顶栏自动隐藏
     - announce.dismiss # 公告栏可以被关闭
     - search.share # 搜索栏分享按钮
     - search.suggest # 搜索栏内容建议
@@ -145,6 +146,7 @@ theme: # 此项各个设定因主题而异
     - content.tooltips # 提示框（以前有的样式变好看了，此外还支持更高级的提示框语法）
     - content.code.copy # 例如：``` python { .yaml .copy } 默认开启，{ .yaml .no-copy } 关闭
     - content.code.annotate # 允许内联代码注释
+    - content.code.select
     - content.tabs.link # 同样的标签，整个网站的同步切换，如 C -> C++，则其它类似的全部标签都同步切换
     - navigation.top # 回到顶部的按钮
     - navigation.tracking # 锚点跟踪
