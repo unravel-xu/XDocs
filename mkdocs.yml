@@ -39,14 +39,14 @@ markdown_extensions:
 
   - toc: # 目录
       # marker: "" # 目录替换文本，空字符串则不替换，缺省为 [TOC]
-      title: On this Page
+      title: 本页内容
       anchorlink: false # 锚点链接（默认值），给标题自身锚定链接
-      permalink: true # 锚点符号
-      permalink_title: ⚓ # 锚点链接提示词
-      permalink_leading: false # 前置锚点链接（默认值），将锚点放到标题前面
+      permalink: ⚓ # 锚点符号
+      permalink_title: 定位到本页内容目录 # 锚点链接提示词
+      # permalink_leading: false # 前置锚点链接（默认值），将锚点放到标题前面
       baselevel: 1 # 最高级别（默认值），往下顺延
       separator: "-" # 分隔符（默认值），替换空格字符
-      toc_depth: 4 # 目录显示级别
+      toc_depth: 3 # 目录显示级别
       slugify: !!python/object/apply:pymdownx.slugs.slugify {} # 锚点链接 URL 格式
 
   ###### PyMdown Extensions 配置（markdown 扩展语法）
@@ -151,7 +151,7 @@ theme: # 此项各个设定因主题而异
     - navigation.top # 回到顶部的按钮
     - navigation.tracking # 锚点跟踪
     - navigation.footer # 页面底下换页的支持
-    - navigation.indexes # 左侧边栏大节点是否可以被导向到 index.md，可以不写，但不能没有
+    # - navigation.indexes # 左侧边栏大节点是否可以被导向到 index.md，可以不写，但不能没有
     - navigation.instant # 页面不会重复加载（已加载页面不会再次加载）
     - navigation.instant.progress # 加载速度慢时，在页面顶部显示加载进度（400ms 以上加载时间才会显示它）
     - navigation.tabs # 页面顶部导航栏
