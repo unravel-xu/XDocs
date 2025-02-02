@@ -6,7 +6,7 @@ repo_name: unravel-xu/XDocs # 仓库名称
 # edit_uri_template: null # 编辑地址模板（默认值）
 site_description: Evariste-xu的电子书库 # 站点描述
 site_author: Evariste-xu # 站点作者
-copyright: Copyright &copy; 2024 Evariste-xu # 版权信息
+copyright: <a href="#__consent">修改 Cookie 设置</a><br/>Copyright &copy; 2024 Evariste-xu # 版权信息
 remote_branch: gh-pages # GitHub Pages 远程分支名称（默认值）
 remote_name: origin # 远程名称（默认值）
 docs_dir: docs # 文档目录（默认值）
@@ -185,8 +185,10 @@ theme: # 此项各个设定因主题而异
     previous: fontawesome/solid/angle-left # 左下角向前翻页的图标
     next: fontawesome/solid/angle-right # 右下角向后翻页的图标
     repo: fontawesome/brands/github # 右上角仓库图标
-    edit: material/pencil # 页面编辑的图标
-    view: material/eye # 页面查看源代码的图标
+    edit: material/file-edit # 页面编辑的图标
+    view: material/file-eye # 页面查看源代码的图标
+    tag:
+      default: material/tag
 
 extra: # 额外设定
   alternate:
@@ -203,7 +205,7 @@ extra: # 额外设定
     - icon: fontawesome/brands/github
       link: https://github.com/unravel-xu/XDocs
       name: GitHub Repository
-    - icon: fontawesome/solid/paper-plane
+    - icon: fontawesome/solid/envelope
       link: mailto:3355340673@qq.com
       name: Contact the author
   consent:
