@@ -28,14 +28,16 @@ Tmux是一个终端复用器（terminal multiplexer）
 新建命名会话：`tmux new -s <session-name>`
 
 分离会话：`Ctrl+b+d` 或 `tmux detach`
-> ! Important
+
+> [!important]-
 > 
-> 退出当前窗口，但会话和里面的进程仍然在后台运行
+> 分离会话会退出当前窗口，但会话和里面的进程仍然在后台运行
+
+接入会话：
 
 查看当前所有会话：`tmux ls`
 
 
-
 ## 参考
 
-1. Tmux 使用教程](https://www.ruanyifeng.com/blog/2019/10/tmux.html)
+1. [Tmux 使用教程](https://www.ruanyifeng.com/blog/2019/10/tmux.html)
