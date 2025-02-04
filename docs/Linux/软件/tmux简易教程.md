@@ -101,16 +101,20 @@ Tmux 可以将窗口分成多个窗格（pane），每个窗格运行不同的�
 ## 实例
 
 需求：后台执行若干AppImage 文件，在 venv 环境下执行 mkdocs serve 指令等
+![[pic-20250204115747743.png]]
+![[file-20250204115630764.png]]
+
+![[file-20250204115304444.png]]
 
 输入 `tmux` 进入默认会话窗口
 
 输入 `Ctrl+b c` 新建窗口
 
-![[file-20250204112912298.png]]
+![[docs/img/docs/Linux/软件/file-20250204112912298.png]]
 
 输入 `Ctrl+b s` 查看窗口
 
-![[file-20250204113306723.png]]
+![[img/docs/Linux/软件/file-20250204113306723.png]]
 
 最后 `tmux detach` 退出即可
 
