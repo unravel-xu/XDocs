@@ -1,6 +1,10 @@
 
 Tmux是一个终端复用器（terminal multiplexer）
 
+帮助命令的快捷键是 `Ctrl+b ?`：在 Tmux 窗口中，先按下 `Ctrl+b`，再按下 `?`，就会显示帮助信息
+
+然后，按下 ESC 键或`q`键，就可以退出帮助
+
 ## 会话
 
 命令行的典型用法是打开终端（terminal）后，在里面输入指令。用户的这种与计算机交互的手段，称为**会话**（session）。
@@ -50,21 +54,45 @@ Tmux是一个终端复用器（terminal multiplexer）
 
 Tmux 可以将窗口分成多个窗格（pane），每个窗格运行不同的命令
 
-划分窗口为上下：`tmux split-window`
+划分窗口为上下：`tmux split-window` 或 `Ctrl+b+"`
 
-划分窗口为左右：`tmux split-window -h`
+划分窗口为左右：`tmux split-window -h` 或 `Ctrl+b+%`
 
-移动光标到上侧窗格：`tmux select-pane -U`
+移动光标到上侧窗格：`tmux select-pane -U` 或 `Ctrl+b+↑`
 
-移动光标到下侧窗格：`tmux select-pane -D`
+移动光标到下侧窗格：`tmux select-pane -D` 或 `Ctrl+b+↓`
 
-移动光标到左侧窗格：`tmux select-pane -L`
+移动光标到左侧窗格：`tmux select-pane -L` 或 `Ctrl+b+←`
 
-移动光标到右侧窗格：`tmux select-pane -R`
+移动光标到右侧窗格：`tmux select-pane -R` 或 `Ctrl+b+→`
 
 将当前窗格上移：`tmux swap-pane -U`
 
 将当前窗格下移：`tmux swap-pane -D`
+
+### 窗口相关
+
+新建窗口：`tmux new-window` 或 `Ctrl+b+c`
+
+新建命名窗口：`tmux new-window -n <window-name>`    
+
+切换到指定编号窗口：`tmux select-window -t <window-number>`
+
+切换到指定名称窗口：`tmux select-window -t <window-name>`
+
+重命名窗口：`tmux rename-window <new-name>`
+
+### 查看命令相关
+
+列出所有快捷键，及其对应的 Tmux 命令：`tmux list-keys`
+
+列出所有 Tmux 命令及其参数：`tmux list-commands`
+
+列出当前所有 Tmux 会话信息：`tmux info` 
+
+## 实例
+
+
 
 ## 参考
 
