@@ -1,3 +1,4 @@
+
 Tmux是一个终端复用器（terminal multiplexer）
 
 ## 会话
@@ -25,18 +26,45 @@ Tmux是一个终端复用器（terminal multiplexer）
 
 退出 Tmux 窗口：`exit` 或 `Ctrl+d`
 
+### 会话相关
+
 新建命名会话：`tmux new -s <session-name>`
 
-分离会话：`Ctrl+b+d` 或 `tmux detach`
+分离会话：`tmux detach` 或 `Ctrl+b+d`
 
 > [!important]-
 > 
 > 分离会话会退出当前窗口，但会话和里面的进程仍然在后台运行
 
-接入会话：
+接入会话：`tmux attach -t <session-name>`
 
-查看当前所有会话：`tmux ls`
+杀死会话：`tmux kill-session -t <session-name>`
 
+切换会话：`tmux switch -t <session-name>`
+
+重命名会话：`tmux rename-session -t <old-session-name> <new-name>` 或 `Ctrl+b+$`
+
+查看当前所有会话：`tmux ls` 或 `Ctrl+b+s`
+
+### 窗格相关  
+
+Tmux 可以将窗口分成多个窗格（pane），每个窗格运行不同的命令
+
+划分窗口为上下：`tmux split-window`
+
+划分窗口为左右：`tmux split-window -h`
+
+移动光标到上侧窗格：`tmux select-pane -U`
+
+移动光标到下侧窗格：`tmux select-pane -D`
+
+移动光标到左侧窗格：`tmux select-pane -L`
+
+移动光标到右侧窗格：`tmux select-pane -R`
+
+将当前窗格上移：`tmux swap-pane -U`
+
+将当前窗格下移：`tmux swap-pane -D`
 
 ## 参考
 
