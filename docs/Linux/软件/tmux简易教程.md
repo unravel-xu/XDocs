@@ -22,9 +22,11 @@ Tmux是一个终端复用器（terminal multiplexer）
 3. 它允许每个会话有多个连接窗口，因此可以多人实时共享会话。
 4. 它还支持窗口任意的垂直和水平拆分
 
-简而言之，Tmux 实现了窗口和会话的解绑
+tmux采用C/S模型构建，输入tmux命令就相当于开启了一个服务器，此时默认将新建一个会话，然后会话中默认新建一个窗口，窗口中默认新建一个面板。会话、窗口、面板之间的联系如下：
 
+一个tmux `session` 可以包含多个 `window`，窗口默认充满会话界面，因此这些窗口中可以运行相关性不大的任务。
 
+一个`window`又可以包含多个`pane`（面板），窗口下的面板，都处于同一界面下，这些面板适合运行相关性高的任务，以便同时观察到它们的运行情况。
 
 ## Tmux 使用
 
@@ -36,7 +38,7 @@ Tmux是一个终端复用器（terminal multiplexer）
 
 新建命名会话：`tmux new -s <session-name>`
 
-分离会话：`tmux detach` 或 `Ctrl+b+d`
+分离会话：`tmux detach` 或 `Ctrl+b d`
 
 > [!important]-
 > 
@@ -48,25 +50,25 @@ Tmux是一个终端复用器（terminal multiplexer）
 
 切换会话：`tmux switch -t <session-name>`
 
-重命名会话：`tmux rename-session -t <old-session-name> <new-name>` 或 `Ctrl+b+$`
+重命名会话：`tmux rename-session -t <old-session-name> <new-name>` 或 `Ctrl+b $`
 
-查看当前所有会话：`tmux ls` 或 `Ctrl+b+s`
+查看当前所有会话：`tmux ls` 或 `Ctrl+b s`
 
 ### 窗格相关  
 
 Tmux 可以将窗口分成多个窗格（pane），每个窗格运行不同的命令
 
-划分窗口为上下：`tmux split-window` 或 `Ctrl+b+"`
+划分窗口为上下：`tmux split-window` 或 `Ctrl+b "`
 
-划分窗口为左右：`tmux split-window -h` 或 `Ctrl+b+%`
+划分窗口为左右：`tmux split-window -h` 或 `Ctrl+b %`
 
-移动光标到上侧窗格：`tmux select-pane -U` 或 `Ctrl+b+↑`
+移动光标到上侧窗格：`tmux select-pane -U` 或 `Ctrl+b ↑`
 
-移动光标到下侧窗格：`tmux select-pane -D` 或 `Ctrl+b+↓`
+移动光标到下侧窗格：`tmux select-pane -D` 或 `Ctrl+b ↓`
 
-移动光标到左侧窗格：`tmux select-pane -L` 或 `Ctrl+b+←`
+移动光标到左侧窗格：`tmux select-pane -L` 或 `Ctrl+b ←`
 
-移动光标到右侧窗格：`tmux select-pane -R` 或 `Ctrl+b+→`
+移动光标到右侧窗格：`tmux select-pane -R` 或 `Ctrl+b →`
 
 将当前窗格上移：`tmux swap-pane -U`
 
@@ -74,7 +76,7 @@ Tmux 可以将窗口分成多个窗格（pane），每个窗格运行不同的�
 
 ### 窗口相关
 
-新建窗口：`tmux new-window` 或 `Ctrl+b+c`
+新建窗口：`tmux new-window` 或 `Ctrl+b c`
 
 新建命名窗口：`tmux new-window -n <window-name>`    
 
@@ -84,6 +86,10 @@ Tmux 可以将窗口分成多个窗格（pane），每个窗格运行不同的�
 
 重命名窗口：`tmux rename-window <new-name>`
 
+打开窗口列表：`Ctrl+b w`
+
+关闭当前窗口：`Ctrl+b &` （需输入 `y` 确认关闭）
+
 ### 查看命令相关
 
 列出所有快捷键，及其对应的 Tmux 命令：`tmux list-keys`
@@ -92,18 +98,9 @@ Tmux 可以将窗口分成多个窗格（pane），每个窗格运行不同的�
 
 列出当前所有 Tmux 会话信息：`tmux info` 
 
-## 实例
 
-```mermaid
-graph LR
-	B(窗口1)--运行obsidian AppImage-->A1(会话1) 
-	B--运行mkdocs serve-->A2(会话2) 
-```
-
-步骤：
-
-`tmux new-window -n mkdocs`
 
 ## 参考
 
-1. [Tmux 使用教程](https://www.ruanyifeng.com/blog/2019/10/tmux.html)
+5. [Tmux 使用教程](https://www.ruanyifeng.com/blog/2019/10/tmux.html)
+6. [Tmux使用手册](https://louiszhai.github.io/2017/09/30/tmux/)
