@@ -36,6 +36,10 @@ This file was automatically generated - do not edit
                 </div>
             </div>
         </div>
+        <label class="mdi mdi-navigation-variant-outline">
+            {% set icon = config.theme.icon.navigation or "material/navigation" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
         {% if config.theme.palette %}
         {% if not config.theme.palette is mapping %}
         {% include "partials/palette.html" %}
