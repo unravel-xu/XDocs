@@ -151,6 +151,7 @@ theme: # 此项各个设定因主题而异
     - navigation.top # 回到顶部的按钮
     - navigation.tracking # 锚点跟踪
     - navigation.footer # 页面底下换页的支持
+    - navigation.path # 页面顶部显示当前页面所在路径
     # - navigation.indexes # 左侧边栏大节点是否可以被导向到 index.md，可以不写，但不能没有
     - navigation.instant # 页面不会重复加载（已加载页面不会再次加载）
     - navigation.instant.progress # 加载速度慢时，在页面顶部显示加载进度（400ms 以上加载时间才会显示它）
@@ -158,7 +159,7 @@ theme: # 此项各个设定因主题而异
     # - navigation.tabs.sticky # 导航栏标题栏位置固定
     # - navigation.sections # 左侧边栏节点是否保持展开
     # - navigation.expand # 左侧边栏节点默认全部展开（与 navigation.prune 不兼容）
-    # - navigation.prune # 左侧栏节点至多展开一个，以此来减小站点的构建大小（对于页数100+的网站很有用，与 navigation.expand 不兼容）
+    - navigation.prune # 左侧栏节点至多展开一个，以此来减小站点的构建大小（对于页数100+的网站很有用，与 navigation.expand 不兼容）
     # - toc.integrate # 右边侧栏是否集成到左侧边栏（与 navigation.indexes 不兼容）
     - toc.follow # 锚点关注，侧边栏自动滚动，使锚点总是可见
   palette: # 界面整体样式
