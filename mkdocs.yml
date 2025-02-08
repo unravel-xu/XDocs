@@ -287,6 +287,11 @@ plugins:
 watch: # serve 实时预览模式下检测更改的目录或文件
   - docs/
   - material/
-  - sources/
-  - pythontutor/
   - mkdocs.yml
+
+nav:
+  - Home: index.md
+  - Algorithm:
+    - Algorithm/index.md
+    - 基础算法: Algorithm/基础算法/index.md
+    - 深入浅出程序设计竞赛（基础篇）: Algorithm/深入浅出程序设计竞赛（基础篇）/index.md
